@@ -1,19 +1,22 @@
 
+import './Resultado.css'
+
 const Resultado = ({ result, boolean }) => {
     return ( 
         <div>
+        <hr />
         {
           boolean && <>
-          <p>Cidade: { result.results.city }</p>
+          <h3>{ result.results.city }</h3>
           <p>Temperatura Atual: { result.results.temp }</p>
           {
-            result.results.forecast.slice(0,1).map( dado =>
+            result.results.forecast.slice(0,5).map( dado =>
               <form key={ result.results.city }>
-              <p>Data: { dado.date }</p>
-              <p>Descrição: { dado.description }</p>
-              <p>Temperatura Maxima: { dado.max }</p>
-              <p>Temperatura Minima: { dado.min }</p>
-              <p>Dia da semana: { dado.weekday }</p>
+                <p>{ dado.date }</p>
+                <p>{ dado.weekday }</p>
+                <p>{ dado.description }</p>
+                <p>Temperatura Maxima: { dado.max }</p>
+                <p>Temperatura Minima: { dado.min }</p>                
               </form>
               )
           }

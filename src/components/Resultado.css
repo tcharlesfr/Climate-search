@@ -1,0 +1,9 @@
+
+form {
+    display: flex;
+    border: 1px solid #444;
+    margin: 10px 0;
+}
+form p {
+    margin: 10px;
+}

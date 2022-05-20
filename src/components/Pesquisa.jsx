@@ -2,7 +2,7 @@
 const Pesquisa = ({ handleInputCidade, inputCidade, handlePesquisaCidade }) => {
     return ( 
         <div className="pesquisa">
-        <form action="">
+        
           <input
             placeholder='Cidade'
             type="text"
@@ -15,7 +15,7 @@ const Pesquisa = ({ handleInputCidade, inputCidade, handlePesquisaCidade }) => {
           >
             Pesquisar cidade    
         </button>
-        </form>
+        
       </div>
      );
 }
